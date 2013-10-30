@@ -24,13 +24,13 @@ class GoGoBot
 	end
 
 	def respond(message)
-		answer = ["Maybe", "Ask again later", "Maybe not", "I'm a robot! how am I supposed to know"]
+		answer = ["Maybe", "Ask again later", "Maybe not", "I'm a robot! how am I supposed to know?"]
 		if message.include? "?"
 			answer.sample
 			@server.puts "PRIVMSG #{@channel} : #{answer.sample}"
 
 		else
-			puts " I need a question with a question mark to predict the future people"
+			puts " I need a question with a question mark to predict the future people!"
 
 		end
 		
